@@ -1,0 +1,297 @@
+@font-face {
+  font-family: "customFont";
+  src: url(Fonts/avrilesans-condensedbold-webfont.woff2) format("woff2"),
+    url(Fonts/avrilesans-condensedbold-webfont.woff) format("woff"),
+    url(Fonts/AvrileSans-CondensedBold.ttf) format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "customKorean";
+  src: url(Fonts/MaruBuri-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "customChinese";
+  src: url(Fonts/975HazyGothicSC-Medium.ttf) format("truetype");
+}
+
+/* The main window. Change the width of your windows by altering the "max-width" value below. */
+.userstuff > .windorv {
+  margin: 3em auto;
+  max-width: 600px;
+}
+
+/* Glowing around the edges. */
+.userstuff > .blue {
+  box-shadow: 0 0 20px 10px #4fffff4f, 0 0 0px 10px #4fffff4a inset;
+}
+.userstuff > .yellow {
+  box-shadow: 0 0 20px 10px #ffff004f, 0 0 0px 10px #ffff0046 inset;
+  transform: scaleY(-1);
+}
+
+/* Angular borders: blue, yellow, and white. */
+.blue {
+  background: -moz-linear-gradient(45deg, transparent 10px, #59aff8 10px),
+    -moz-linear-gradient(135deg, transparent 20px, #59aff8 20px),
+    -moz-linear-gradient(225deg, transparent 10px, #59aff8 10px),
+    -moz-linear-gradient(315deg, transparent 20px, #59aff8 20px);
+}
+.blue {
+  background: -o-linear-gradient(45deg, transparent 10px, #59aff8 10px),
+    -o-linear-gradient(315deg, transparent 20px, #59aff8 20px),
+    -o-linear-gradient(225deg, transparent 10px, #59aff8 10px),
+    -o-linear-gradient(135deg, transparent 20px, #59aff8 20px);
+}
+.blue {
+  background: -webkit-linear-gradient(45deg, transparent 10px, #59aff8 10px),
+    -webkit-linear-gradient(315deg, transparent 20px, #59aff8 20px),
+    -webkit-linear-gradient(225deg, transparent 10px, #59aff8 10px),
+    -webkit-linear-gradient(135deg, transparent 20px, #59aff8 20px);
+}
+.blue {
+  background: linear-gradient(45deg, transparent 10px, #59aff8 10px),
+    linear-gradient(315deg, transparent 20px, #59aff8 20px),
+    linear-gradient(225deg, transparent 10px, #59aff8 10px),
+    linear-gradient(135deg, transparent 20px, #59aff8 20px);
+}
+
+.yellow {
+  background: -moz-linear-gradient(45deg, transparent 10px, #f1a900 10px),
+    -moz-linear-gradient(135deg, transparent 20px, #f1a900 20px),
+    -moz-linear-gradient(225deg, transparent 10px, #f1a900 10px),
+    -moz-linear-gradient(315deg, transparent 20px, #f1a900 20px);
+}
+.yellow {
+  background: -o-linear-gradient(45deg, transparent 10px, #f1a900 10px),
+    -o-linear-gradient(315deg, transparent 20px, #f1a900 20px),
+    -o-linear-gradient(225deg, transparent 10px, #f1a900 10px),
+    -o-linear-gradient(135deg, transparent 20px, #f1a900 20px);
+}
+.yellow {
+  background: -webkit-linear-gradient(45deg, transparent 10px, #f1a900 10px),
+    -webkit-linear-gradient(315deg, transparent 20px, #f1a900 20px),
+    -webkit-linear-gradient(225deg, transparent 10px, #f1a900 10px),
+    -webkit-linear-gradient(135deg, transparent 20px, #f1a900 20px);
+}
+.yellow {
+  background: linear-gradient(45deg, transparent 10px, #f1a900 10px),
+    linear-gradient(315deg, transparent 20px, #f1a900 20px),
+    linear-gradient(225deg, transparent 10px, #f1a900 10px),
+    linear-gradient(135deg, transparent 20px, #f1a900 20px);
+}
+
+.white {
+  background: -moz-linear-gradient(45deg, transparent 10px, #f0fefe 10px),
+    -moz-linear-gradient(135deg, transparent 20px, #f0fefe 20px),
+    -moz-linear-gradient(225deg, transparent 10px, #f0fefe 10px),
+    -moz-linear-gradient(315deg, transparent 20px, #f0fefe 20px);
+}
+.white {
+  background: -o-linear-gradient(45deg, transparent 10px, #f0fefe 10px),
+    -o-linear-gradient(315deg, transparent 20px, #f0fefe 20px),
+    -o-linear-gradient(225deg, transparent 10px, #f0fefe 10px),
+    -o-linear-gradient(135deg, transparent 20px, #f0fefe 20px);
+}
+.white {
+  background: -webkit-linear-gradient(45deg, transparent 10px, #f0fefe 10px),
+    -webkit-linear-gradient(315deg, transparent 20px, #f0fefe 20px),
+    -webkit-linear-gradient(225deg, transparent 10px, #f0fefe 10px),
+    -webkit-linear-gradient(135deg, transparent 20px, #f0fefe 20px);
+}
+.white {
+  background: linear-gradient(45deg, transparent 10px, #f0fefe 10px),
+    linear-gradient(315deg, transparent 20px, #f0fefe 20px),
+    linear-gradient(225deg, transparent 10px, #f0fefe 10px),
+    linear-gradient(135deg, transparent 20px, #f0fefe 20px);
+}
+
+/* General setup for the main window. */
+.windorv {
+  background-position: bottom left, bottom right, top right, top left;
+  -moz-background-size: 50% 50%;
+  -webkit-background-size: 50% 50%;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  padding: 2px;
+  border-radius: 30px 15px;
+}
+/* Accounting for AO3's additional <p> tags. */
+.windorv p {
+  margin: 0;
+}
+
+/* Styling for the text within the window. */
+.lastwin {
+  padding: 10px 5px;
+  color: #f0fefe;
+  /* font-family: Trebuchet MS, sans-serif; */
+  /* font-family: customFont, Trebuchet MS, sans-serif; */
+  text-transform: uppercase;
+  text-shadow: 0 0 5px #052160;
+  font-weight: bold;
+}
+
+/* content: "— ❐ ✖"; */
+/* The minimize, resize, and close buttons on the window. */
+/* .lastwin::before {
+  content: "— ❐ ✕";
+  font-family: Trebuchet MS, sans-serif;
+  float: right;
+  padding: 3px 15px 0 0;
+  font-size: 2.4em;
+}
+.yellow.lastwin::before {
+  padding: 3px 35px 0 0;
+  transform: scaleX(-1);
+  position: absolute;
+  z-index: 1;
+} */
+.lastwin > .icon {
+  text-align: center;
+  height: 1em;
+  height: calc(1em + 2px);
+  width: 1em;
+  width: calc(1em + 2px);
+  font-size: 1em;
+  line-height: 1em;
+  font-weight: bold;
+  border: solid #f0fefe 1px;
+  float: right;
+  margin: 0 0px 0 5px;
+}
+
+.lastwin span {
+  font-family: Trebuchet MS, sans-serif;
+  float: right;
+  padding: 3px 15px 0 0;
+  font-size: 2.4em;
+  clear: right;
+}
+
+/* Aligning the paragraphs within the window. */
+.lastwin p {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 10px;
+  width: fit-content;
+  font-weight: bold;
+  font-family: "customFont", serif;
+}
+.lastwin p {
+  width: -webkit-fit-content;
+}
+.lastwin p {
+  width: -moz-fit-content;
+}
+
+/* Scenario window navigation bar, angular and underlying borders. */
+.outer {
+  padding: 1px;
+  margin-bottom: 25px;
+  margin-top: -5px;
+}
+.blue .outer {
+  background: -webkit-linear-gradient(225deg, transparent 10px, #f0fefe 10px),
+    -webkit-linear-gradient(315deg, transparent 20px, #f0fefe 20px);
+}
+.blue .outer {
+  background: -o-linear-gradient(225deg, transparent 10px, #f0fefe 10px),
+    -o-linear-gradient(315deg, transparent 20px, #f0fefe 20px);
+}
+.blue .outer {
+  background: -moz-linear-gradient(225deg, transparent 10px, #f0fefe 10px),
+    -moz-linear-gradient(315deg, transparent 20px, #f0fefe 20px);
+}
+.blue .outer {
+  background: linear-gradient(225deg, transparent 10px, #f0fefe 10px),
+    linear-gradient(135deg, transparent 20px, #f0fefe 20px);
+  box-shadow: 0px 10px 0px 0px #59aff8, 0px 16px 0px -1px #f0fefe;
+}
+
+.yellow .outer {
+  background: -webkit-linear-gradient(225deg, transparent 20px, #f0fefe 20px),
+    -webkit-linear-gradient(315deg, transparent 10px, #f0fefe 10px);
+}
+.yellow .outer {
+  background: -o-linear-gradient(225deg, transparent 20px, #f0fefe 20px),
+    -o-linear-gradient(315deg, transparent 10px, #f0fefe 10px);
+}
+.yellow .outer {
+  background: -moz-linear-gradient(225deg, transparent 20px, #f0fefe 20px),
+    -moz-linear-gradient(315deg, transparent 10px, #f0fefe 10px);
+}
+.yellow .outer {
+  background: linear-gradient(225deg, transparent 20px, #f0fefe 20px),
+    linear-gradient(135deg, transparent 10px, #f0fefe 10px);
+  box-shadow: 0px 10px 0px 0px #f1a900, 0px 16px 0px -1px #f0fefe;
+}
+
+/* More navbar angular borders and navbar text styling. */
+.inner {
+  padding: 4px;
+  font-size: 2.4em;
+  text-align: center;
+}
+.blue .inner {
+  background: -webkit-linear-gradient(225deg, transparent 10px, #01c8e8 10px),
+    -webkit-linear-gradient(315deg, transparent 20px, #01c8e8 20px);
+}
+.blue .inner {
+  background: -o-linear-gradient(225deg, transparent 10px, #01c8e8 10px),
+    -o-linear-gradient(315deg, transparent 20px, #01c8e8 20px);
+}
+.blue .inner {
+  background: -moz-linear-gradient(225deg, transparent 10px, #01c8e8 10px),
+    -moz-linear-gradient(315deg, transparent 20px, #01c8e8 20px);
+}
+.blue .inner {
+  background: linear-gradient(225deg, transparent 10px, #01c8e8 10px),
+    linear-gradient(135deg, transparent 20px, #01c8e8 20px);
+}
+.yellow .inner {
+  background: -webkit-linear-gradient(225deg, transparent 20px, #ffcb00 20px),
+    -webkit-linear-gradient(315deg, transparent 10px, #ffcb00 10px);
+}
+.yellow .inner {
+  background: -o-linear-gradient(225deg, transparent 20px, #ffcb00 20px),
+    -o-linear-gradient(315deg, transparent 10px, #ffcb00 10px);
+}
+.yellow .inner {
+  background: -moz-linear-gradient(225deg, transparent 20px, #ffcb00 20px),
+    -moz-linear-gradient(315deg, transparent 10px, #ffcb00 10px);
+}
+.yellow .inner {
+  background: linear-gradient(225deg, transparent 20px, #ffcb00 20px),
+    linear-gradient(135deg, transparent 10px, #ffcb00 10px);
+}
+
+/* Navbar styling. */
+.scenario {
+  background-position: top right, top left !important;
+  -moz-background-size: 50% 100% !important;
+  -webkit-background-size: 50% 100% !important;
+  background-size: 50% 100% !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Styling for the headings, like scenario name and clear conditions. */
+.header {
+  font-size: 2.8em;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+/* Styling for all other text in the scenario window. */
+.lastwin p:not(.header) {
+  text-align: left;
+}
+
+/* Flipping the story window appropriately. */
+.yellow.lastwin {
+  transform: scale(-1, -1);
+}
+.yellow.lastwin > * {
+  transform: scaleX(-1);
+}
