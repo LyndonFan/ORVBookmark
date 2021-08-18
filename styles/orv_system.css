@@ -1,25 +1,23 @@
-/* ../ORVBookmark trick is for github pages
+/* Might need ../ORVBookmark trick is for github pages
 See https://newbedev.com/adding-custom-fonts-to-github-pages
 */
 
 @font-face {
   font-family: "customFont";
-  src: url("../ORVBookmark/fonts/avrilesans-condensedbold-webfont.woff2")
-      format("woff2"),
-    url("../ORVBookmark/fonts/avrilesans-condensedbold-webfont.woff")
-      format("woff"),
-    url("../ORVBookmark/fonts/AvrileSans-CondensedBold.ttf") format("truetype");
+  src: url("../fonts/avrilesans-condensedbold-webfont.woff2") format("woff2"),
+    url("../fonts/avrilesans-condensedbold-webfont.woff") format("woff"),
+    url("../fonts/AvrileSans-CondensedBold.ttf") format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "customKorean";
-  src: url("../ORVBookmark/fonts/MaruBuri-Regular.ttf") format("truetype");
+  src: url("../fonts/MaruBuri-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "customChinese";
-  src: url("../ORVBookmark/fonts/975HazyGothicSC-Medium.ttf") format("truetype");
+  src: url("../fonts/975HazyGothicSC-Medium.ttf") format("truetype");
 }
 
 /* The main window. Change the width of your windows by altering the "max-width" value below. */
