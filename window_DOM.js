@@ -16,7 +16,10 @@ const prependString = `
 // originally ✕, ❐, — from top to bottom
 const appendString = `</div></div></div></div></div>`;
 
-console.log(prependString)
+const galaxyString = `<div class="windorv" style="
+    background-image: url(galaxy.png);
+    background-size: cover;">
+`
 
 function updateWindows(){
     var body = document.getElementsByTagName("body");
@@ -24,12 +27,25 @@ function updateWindows(){
     var windows = document.getElementsByClassName("orvwindow");
     console.log(windows.length+" window"+(windows.length==1?"":"s"));
     for (var i = 0; i < windows.length; i++){
-        console.log(windows[i].classList);
+        var oldStyle = windows[i].style;
+        console.log(oldStyle);
         if (windows[i].classList.contains("yellow")){
             windows[i].classList.remove("yellow");
             windows[i].innerHTML = prependString.replaceAll("blue","yellow") + windows[i].innerHTML + appendString; 
         } else {
             windows[i].innerHTML = prependString + windows[i].innerHTML + appendString; 
+        }
+        windows[i].classList.add("windorv");
+        windows[i].style.borderRadius = "0";
+        if (windows[i].classList.contains("galaxy")){
+            windows[i].classList.remove("galaxy");
+            windows[i].style.backgroundImage = "url(galaxy.png)";
+            windows[i].style.backgroundSize = "cover";
+        } else {
+            if (!windows[i].style.maxWidth){
+                windows[i].style.padding = "0";
+                windows[i].style.maxWidth = "1000px";
+            }
         }
     }
 }
