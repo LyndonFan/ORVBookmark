@@ -8,12 +8,12 @@
 
 @font-face {
   font-family: "customKorean";
-  src: url(fonts/MaruBuri-Regular.ttf) format("truetype");
+  src: url("fonts/MaruBuri-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "customChinese";
-  src: url(fonts/975HazyGothicSC-Medium.ttf) format("truetype");
+  src: url("fonts/975HazyGothicSC-Medium.ttf") format("truetype");
 }
 
 /* The main window. Change the width of your windows by altering the "max-width" value below. */
