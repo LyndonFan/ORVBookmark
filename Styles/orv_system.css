@@ -1,3 +1,7 @@
+/* ../ORVBookmark trick is for github pages
+See https://newbedev.com/adding-custom-fonts-to-github-pages
+*/
+
 @font-face {
   font-family: "customFont";
   src: url("../ORVBookmark/fonts/avrilesans-condensedbold-webfont.woff2")
