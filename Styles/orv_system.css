@@ -1,19 +1,19 @@
 @font-face {
   font-family: "customFont";
-  src: url(Fonts/avrilesans-condensedbold-webfont.woff2) format("woff2"),
-    url(Fonts/avrilesans-condensedbold-webfont.woff) format("woff"),
-    url(Fonts/AvrileSans-CondensedBold.ttf) format("truetype");
+  src: url(../fonts/avrilesans-condensedbold-webfont.woff2) format("woff2"),
+    url(../fonts/avrilesans-condensedbold-webfont.woff) format("woff"),
+    url(../fonts/AvrileSans-CondensedBold.ttf) format("truetype");
   font-weight: bold;
 }
 
 @font-face {
   font-family: "customKorean";
-  src: url(Fonts/MaruBuri-Regular.ttf) format("truetype");
+  src: url(../fonts/MaruBuri-Regular.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "customChinese";
-  src: url(Fonts/975HazyGothicSC-Medium.ttf) format("truetype");
+  src: url(../fonts/975HazyGothicSC-Medium.ttf) format("truetype");
 }
 
 /* The main window. Change the width of your windows by altering the "max-width" value below. */
@@ -141,13 +141,13 @@
   float: right;
   padding: 3px 15px 0 0;
   font-size: 2.4em;
-}
-.yellow.lastwin::before {
-  padding: 3px 35px 0 0;
-  transform: scaleX(-1);
-  position: absolute;
-  z-index: 1;
 } */
+.yellow.lastwin::before {
+  /* padding: 3px 35px 0 0; */
+  transform: scaleX(-1);
+  /* position: absolute;
+  z-index: 1; */
+}
 .lastwin > .icon {
   text-align: center;
   height: 1em;
@@ -160,6 +160,7 @@
   border: solid #f0fefe 1px;
   float: right;
   margin: 0 0px 0 5px;
+  text-shadow: 0 0 2.5px #052160;
 }
 
 .lastwin span {
@@ -289,9 +290,9 @@
 }
 
 /* Flipping the story window appropriately. */
-.yellow.lastwin {
+/* .yellow.lastwin {
   transform: scale(-1, -1);
 }
 .yellow.lastwin > * {
   transform: scaleX(-1);
-}
+} */
