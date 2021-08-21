@@ -7,7 +7,7 @@ class ORVWindow extends React.Component{
     }
 
     render(){
-        // console.log(this.color);
+        console.log("Testing...");
         return (
         <div className="userstuff">
         <div className="blue windorv">
@@ -15,18 +15,17 @@ class ORVWindow extends React.Component{
             <div className="blue windorv">
                 <div className="white windorv">
                     <div className="blue windorv lastwin">
-                        <span style={{width:"100%"}}>
-                            <span className="icon">✕</span>
-                            <span> </span>
-                            <span className="icon">❐</span>
-                            <span> </span>
-                            <span className="icon">—</span>
-                        </span>
+                        <p style={{width:"100%"}}><span></span></p>
+                        <div className="icon">✕</div>
+                        <div> </div>
+                        <div className="icon">❐</div>
+                        <div> </div>
+                        <div className="icon">—</div>
+                        <p></p>
                         <p>Testing 123</p>
         </div></div></div></div></div></div>
         );
     }
 }
 
-const domContainer = document.querySelector("#container");
-ReactDOM.render(React.createElement(ORVWindow), domContainer);
+http://[::]:8000/react_orv_bookmark.html
