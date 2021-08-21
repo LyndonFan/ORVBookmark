@@ -32,7 +32,6 @@ See https://newbedev.com/adding-custom-fonts-to-github-pages
 }
 .userstuff > .yellow {
   box-shadow: 0 0 20px 10px #ffff004f, 0 0 0px 10px #ffff0046 inset;
-  transform: scaleY(-1);
 }
 
 /* Angular borders: blue, yellow, and white. */
@@ -137,21 +136,6 @@ See https://newbedev.com/adding-custom-fonts-to-github-pages
   font-weight: bold;
 }
 
-/* content: "— ❐ ✖"; */
-/* The minimize, resize, and close buttons on the window. */
-/* .lastwin::before {
-  content: "— ❐ ✕";
-  font-family: Trebuchet MS, sans-serif;
-  float: right;
-  padding: 3px 15px 0 0;
-  font-size: 2.4em;
-} */
-.yellow.lastwin::before {
-  /* padding: 3px 35px 0 0; */
-  transform: scaleX(-1);
-  /* position: absolute;
-  z-index: 1; */
-}
 .lastwin > .icon {
   text-align: center;
   height: 1em;
@@ -292,11 +276,3 @@ See https://newbedev.com/adding-custom-fonts-to-github-pages
 .lastwin p:not(.header) {
   text-align: left;
 }
-
-/* Flipping the story window appropriately. */
-/* .yellow.lastwin {
-  transform: scale(-1, -1);
-}
-.yellow.lastwin > * {
-  transform: scaleX(-1);
-} */
