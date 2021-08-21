@@ -27,5 +27,3 @@ class ORVWindow extends React.Component{
         );
     }
 }
-
-http://[::]:8000/react_orv_bookmark.html
