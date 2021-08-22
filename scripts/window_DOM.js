@@ -16,11 +16,6 @@ const prependString = `
 // originally ✕, ❐, — from top to bottom
 const appendString = `</div></div></div></div></div>`;
 
-const galaxyString = `<div class="windorv" style="
-    background-image: url(galaxy.png);
-    background-size: cover;">
-`
-
 function updateWindows(){
     var body = document.getElementsByTagName("body");
     body[0].innerHTML = "<div class='userstuff'>\n"+body[0].innerHTML+"</div>";
@@ -39,7 +34,7 @@ function updateWindows(){
         windows[i].style.borderRadius = "0";
         if (windows[i].classList.contains("galaxy")){
             windows[i].classList.remove("galaxy");
-            windows[i].style.backgroundImage = "url(galaxy.png)";
+            windows[i].style.backgroundImage = "url(../images/galaxy.png)";
             windows[i].style.backgroundSize = "cover";
         } else {
             if (!windows[i].style.maxWidth){
